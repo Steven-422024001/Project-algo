@@ -1,0 +1,105 @@
+Flowchart Euclid's Algorithm:
+[Start]
+   |
+   v
+[Input a, b]
+   |
+   v
+[Is b == 0?]
+   | Yes        No
+   |            |
+   v            v
+[Output a]   [a = b, b = a % b]
+   |            |
+   v            v
+ [Stop]       [Repeat]
+
+
+
+Flowchart Insertion Sort:
+[Start]
+   |    
+[Input Array]
+   |
+[Set n = Length of Array]
+   |
+[Outer Loop (i = 0 to n-1)]
+   |
+[Set Swapped = False]
+   |
+[Inner Loop (j = 0 to n-i-2)]
+   |
+[Compare Array[j] and Array[j+1]]
+   |
+[Is Array[j] > Array[j+1]?] -- Yes --> [Swap Array[j] and Array[j+1]]
+   |                                      |
+   |                                      |
+   |                                     [Set Swapped = True]
+   |                                      |
+   |-- No --------------------------------|
+   |
+[End Inner Loop]
+   |
+[Is Swapped = False?] -- Yes --> [End Algorithm]
+   | 
+   |-- No ------------------------------|
+   |
+[End Outer Loop]
+   |
+[Output Sorted Array]
+   |
+[End]
+
+
+Flowchart Kadane’s Algorithm:
+[Start]
+   |
+   v
+[Input an array of n integers]
+   |
+   v
+[Initialize max_current = max_global = first element]
+   |
+   v
+[Iterate from 2nd element to last element]
+   |
+   v
+[max_current = max(current_element, max_current + current_element)]
+   |
+   v
+[Update max_global if max_current > max_global]
+   |
+   v
+[Repeat until end of array]
+   |
+   v
+[Output max_global]
+   |
+   v
+[Stop]
+
+
+Flowchart Dijkstra’s Algorithm:
+[Start]
+   |
+   v
+[Initialize all distances to infinity, except source = 0]
+   |
+   v
+[Mark all nodes as unvisited]
+   |
+   v
+[Pick the unvisited node with the smallest distance]
+   |
+   v
+[Update the distances of its neighbors]
+   |
+   v
+[Mark the current node as visited]
+   |
+   v
+[Have all nodes been visited?]
+   | Yes         No
+   |             |
+   v             v
+ [Stop]       [Repeat]
