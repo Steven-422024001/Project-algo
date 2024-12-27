@@ -138,4 +138,4 @@ class Graphs:
                 if 0 <= nx < rows and 0 <= ny < cols and grid[nx][ny] == 0 and (nx, ny) not in visited:
                     visited.add((nx, ny))
                     queue.append((nx, ny, dist + 1))
-        return -1
+                    return -1
